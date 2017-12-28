@@ -64,3 +64,9 @@ for n in range(0,observations):
     total_reward_ucb = total_reward_ucb + reward_ucb
 
 # Hence, we see that the total reward in this case is 2178
+# plotting the histogram
+plt.hist(ads_selected_ucb)
+plt.title('Histograms of ads selected with ucb algo')
+plt.xlabel('Ads')
+plt.ylabel('Number of times each ad was selected')
+plt.show()
