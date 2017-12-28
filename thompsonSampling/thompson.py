@@ -40,3 +40,10 @@ for n in range(0,observations):
         totalRewards_thompson = totalRewards_thompson + 1
     else:
         number_of_zeroes_thompson[ad] = number_of_zeroes_thompson[ad] + 1
+
+# Visualizing the results
+plt.hist(ads_selected_thompson)
+plt.title('Histograms for ads selections')
+plt.xlabel('Ads')
+plt.ylabel('Number of times each ad was selected')
+plt.show(
